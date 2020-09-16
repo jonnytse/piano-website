@@ -11,7 +11,7 @@ class Navbar extends Component {
                     <li><a href="/events">Events</a></li>
                     <li><a href="/gallery">Gallery</a></li>
                     <li><a href="/media">Media</a></li>
-                    <li><a href="teaching">Teaching</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
