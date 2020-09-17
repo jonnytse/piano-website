@@ -2,11 +2,48 @@ import React, { Component } from "react";
 import styles from "./Contact.module.scss";
 
 class Contact extends Component {
+    state = {
+        name: '',
+        email: '',
+        mobile: '',
+        subject: '',
+        message: ''
+    }
+    handleChange = (event) => {
+        this.setState({
+            [event.target.id]: event.target.value
+        })
+    }
+    handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(this.state);
+    }
     render() {
         return (
             <div className={styles.contact}>
                 <h4>Contact Me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolores fugiat ducimus! In eos illum accusantium voluptatibus sint hic totam deserunt numquam iusto repellendus veritatis dolorum accusamus, incidunt provident inventore.</p>
+                <p>Please get in touch with press, licensing and booking enquiries.</p>
+                <p>To download a press pack, please find pictures and biography in this Dropbox: (This is not done yet!)</p>
+                <div>
+                    <form onSubmit={this.handleSubmit}>
+                        {/* <label htmlFor="name">Name</label> */}
+                        <input type="text" placeholder="Name" id="name" required onChange={this.handleChange} />
+
+                        {/* <label htmlFor="email">Email</label> */}
+                        <input type="text" placeholder="Email" id="email" required onChange={this.handleChange} />
+
+                        {/* <label htmlFor="mobile">Mobile</label> */}
+                        <input type="text" placeholder="Mobile" id="mobile" onChange={this.handleChange} />
+
+                        {/* <label htmlFor="subject">Subject</label> */}
+                        <input type="text" placeholder="Subject" id="subject" onChange={this.handleChange} />
+
+                        {/* <label htmlFor="message">Message</label> */}
+                        <input type="text" placeholder="Your message" id="message" required onChange={this.handleChange} /><br></br>
+                        
+                        <button>Submit</button>
+                    </form>
+                </div>
             </div>
         )
     }
