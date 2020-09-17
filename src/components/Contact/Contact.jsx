@@ -26,22 +26,25 @@ class Contact extends Component {
                 <p>To download a press pack, please find pictures and biography in this Dropbox: (This is not done yet!)</p>
                 <div>
                     <form onSubmit={this.handleSubmit}>
-                        {/* <label htmlFor="name">Name</label> */}
-                        <input type="text" placeholder="Name" id="name" required onChange={this.handleChange} />
-
+                        <label htmlFor="name">Name</label>
+                        <input type="text" id="name" required onChange={this.handleChange} />
+                        
                         {/* <label htmlFor="email">Email</label> */}
                         <input type="text" placeholder="Email" id="email" required onChange={this.handleChange} />
-
+                        
                         {/* <label htmlFor="mobile">Mobile</label> */}
                         <input type="text" placeholder="Mobile" id="mobile" onChange={this.handleChange} />
-
+                        
                         {/* <label htmlFor="subject">Subject</label> */}
                         <input type="text" placeholder="Subject" id="subject" onChange={this.handleChange} />
-
                         {/* <label htmlFor="message">Message</label> */}
-                        <input type="text" placeholder="Your message" id="message" required onChange={this.handleChange} /><br></br>
                         
-                        <button>Submit</button>
+                        <input type="text" placeholder="Your message" id="message" required onChange={this.handleChange} /><br></br>
+
+                        {/* text area for message? */}
+                        {/* <textarea placeholder="Your message" rows="7" id="message" required onChange={this.handleChange} ></textarea><br></br> */}
+
+                        <button>SUBMIT</button>
                     </form>
                 </div>
             </div>
