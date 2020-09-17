@@ -7,13 +7,13 @@ class Navbar extends Component {
         return (
             <nav>
                 <ul className={styles.navbar}>
-                    <li><Link to="/">Home</Link></li>
-                    <li><NavLink to="/about">About Me</NavLink></li>
-                    <li><NavLink to="/events">Events</NavLink></li>
-                    <li><NavLink to="/gallery">Gallery</NavLink></li>
-                    <li><NavLink to="/media">Media</NavLink></li>
-                    <li><NavLink to="/teaching">Teaching</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><Link to="/">HOME</Link></li>
+                    <li><NavLink to="/about">ABOUT ME</NavLink></li>
+                    <li><NavLink to="/events">EVENTS</NavLink></li>
+                    <li><NavLink to="/gallery">GALLERY</NavLink></li>
+                    <li><NavLink to="/media">MEDIA</NavLink></li>
+                    <li><NavLink to="/teaching">TEACHING</NavLink></li>
+                    <li><NavLink to="/contact">CONTACT</NavLink></li>
                 </ul>
             </nav>
         )

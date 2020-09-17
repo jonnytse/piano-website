@@ -1,5 +1,6 @@
 .navbar {
-    background-color: #336699;
+    // background-color: #336699;
+    background-color: black;
     display: flex;
     justify-content: space-evenly;
 }
@@ -11,7 +12,8 @@ a {
 }
 
 a:hover {
-    opacity: 0.3;
+    opacity: 0.6;
+    border-bottom: white;
 }
 
 ul {
