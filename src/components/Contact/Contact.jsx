@@ -26,9 +26,9 @@ class Contact extends Component {
                 <p>To download a press pack, please find pictures and biography in this Dropbox: (This is not done yet!)</p>
                 <div>
                     <form onSubmit={this.handleSubmit}>
-                        <label htmlFor="name">Name</label>
-                        <input type="text" id="name" required onChange={this.handleChange} />
-                        
+                        {/* <label htmlFor="name">Name</label> */}
+                        <input type="text" placeholder="Name" id="name" required onChange={this.handleChange} />
+
                         {/* <label htmlFor="email">Email</label> */}
                         <input type="text" placeholder="Email" id="email" required onChange={this.handleChange} />
                         
