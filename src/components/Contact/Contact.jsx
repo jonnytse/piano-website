@@ -23,9 +23,8 @@ class Contact extends Component {
             <div className={styles.contact}>
                 <h4>Contact Me</h4>
                 <p>Please get in touch with press, licensing and booking enquiries.</p>
-                <p>To download a press pack, please find pictures and biography in this Dropbox: (This is not done yet!)</p>
                 <div>
-                    <form onSubmit={this.handleSubmit}>
+                    <form className={styles.form} onSubmit={this.handleSubmit}>
                         {/* <label htmlFor="name">Name</label> */}
                         <input type="text" placeholder="Name" id="name" required onChange={this.handleChange} />
 
@@ -34,19 +33,17 @@ class Contact extends Component {
                         
                         {/* <label htmlFor="mobile">Mobile</label> */}
                         <input type="text" placeholder="Mobile" id="mobile" onChange={this.handleChange} />
-                        
-                        {/* <label htmlFor="subject">Subject</label> */}
-                        <input type="text" placeholder="Subject" id="subject" onChange={this.handleChange} />
-                        {/* <label htmlFor="message">Message</label> */}
-                        
-                        <input type="text" placeholder="Your message" id="message" required onChange={this.handleChange} /><br></br>
+                       
+                        {/* <label htmlFor="message">Message</label> */} 
+                        {/* <input type="text" placeholder="Your message" id="message" required onChange={this.handleChange} /><br></br> */}
 
                         {/* text area for message? */}
-                        {/* <textarea placeholder="Your message" rows="7" id="message" required onChange={this.handleChange} ></textarea><br></br> */}
+                        <textarea placeholder="Your message..." rows="7" id="message" required onChange={this.handleChange} ></textarea><br></br>
 
-                        <button>SUBMIT</button>
+                        <button>SEND</button>
                     </form>
                 </div>
+                <p>To download a press pack, please find pictures and biography in this Dropbox: (This is not done yet!)</p>
             </div>
         )
     }
