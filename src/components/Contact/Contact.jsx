@@ -29,7 +29,7 @@ class Contact extends Component {
                         <input type="text" placeholder="Name (required)" id="name" required onChange={this.handleChange} />
 
                         {/* <label htmlFor="email">Email</label> */}
-                        <input type="text" placeholder="Email (required)" id="email" required onChange={this.handleChange} />
+                        <input type="email" placeholder="Email (required)" id="email" required onChange={this.handleChange} />
                         
                         {/* <label htmlFor="mobile">Mobile</label> */}
                         <input type="text" placeholder="Mobile" id="mobile" onChange={this.handleChange} />
