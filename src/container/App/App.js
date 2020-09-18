@@ -11,7 +11,6 @@ import Media from '../../components/Media';
 import Teaching from '../../components/Teaching';
 import Contact from '../../components/Contact';
 
-
 class App extends Component {
   render () {
     return (
@@ -19,13 +18,15 @@ class App extends Component {
         <div className={styles.App}>
           <Header />
           <Navbar />
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/events' component={Events} />
-          <Route path='/gallery' component={Gallery} />
-          <Route path='/media' component={Media} />
-          <Route path='/teaching' component={Teaching} />
-          <Route path='/contact' component={Contact} />
+          <div className={styles.background}>
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/events' component={Events} />
+            <Route path='/gallery' component={Gallery} />
+            <Route path='/media' component={Media} />
+            <Route path='/teaching' component={Teaching} />
+            <Route path='/contact' component={Contact} />
+          </div>
         </div>
       </BrowserRouter>
     );

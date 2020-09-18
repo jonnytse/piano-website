@@ -26,10 +26,10 @@ class Contact extends Component {
                 <div>
                     <form className={styles.form} onSubmit={this.handleSubmit}>
                         {/* <label htmlFor="name">Name</label> */}
-                        <input type="text" placeholder="Name" id="name" required onChange={this.handleChange} />
+                        <input type="text" placeholder="Name (required)" id="name" required onChange={this.handleChange} />
 
                         {/* <label htmlFor="email">Email</label> */}
-                        <input type="text" placeholder="Email" id="email" required onChange={this.handleChange} />
+                        <input type="text" placeholder="Email (required)" id="email" required onChange={this.handleChange} />
                         
                         {/* <label htmlFor="mobile">Mobile</label> */}
                         <input type="text" placeholder="Mobile" id="mobile" onChange={this.handleChange} />
@@ -38,7 +38,7 @@ class Contact extends Component {
                         {/* <input type="text" placeholder="Your message" id="message" required onChange={this.handleChange} /><br></br> */}
 
                         {/* text area for message? */}
-                        <textarea placeholder="Your message..." rows="7" id="message" required onChange={this.handleChange} ></textarea><br></br>
+                        <textarea placeholder="Message (required)..." rows="7" id="message" required onChange={this.handleChange} ></textarea><br></br>
 
                         <button>SEND</button>
                     </form>
