@@ -10,6 +10,7 @@ import Gallery from '../../components/Gallery';
 import Media from '../../components/Media';
 import Teaching from '../../components/Teaching';
 import Contact from '../../components/Contact';
+import SocialFollow from '../../components/SocialFollow';
 
 class App extends Component {
   render () {
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path='/media' component={Media} />
             <Route path='/teaching' component={Teaching} />
             <Route path='/contact' component={Contact} />
+            <SocialFollow />
           </div>
         </div>
       </BrowserRouter>

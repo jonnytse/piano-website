@@ -1,0 +1,25 @@
+.social a {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+.social a:hover {
+    transform: translateY(-2px);
+}
+
+a.instagram {
+    color: black;
+}
+
+a.twitter {
+    color: #49a1eb;
+}
+
+a.soundcloud {
+    color: #ff7700;
+}
+
+a.youtube {
+    color: #e62117;
+}
