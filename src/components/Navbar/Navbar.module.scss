@@ -11,9 +11,10 @@
 }
 
 .navbar a:hover {
-    opacity: 0.5;
+    // opacity: 0.5;
+    color: #d4af37;
     border-bottom: white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #d4af37;
     border-bottom-width: 2px;
     padding-bottom: 6px;
 }
